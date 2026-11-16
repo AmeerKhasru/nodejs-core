@@ -15,11 +15,10 @@ const routeHandler = (req : IncomingMessage, res :
        
     }
 
-    else if(url==="/products" && method==="GET"){
-         
-
-         productController(req,res);
+    else if (url?.startsWith("/products")) {
+        return productController(req, res);
     }
+    
     else if(url==="/sports-item" && method==="GET"){
         
         sportsItemController(req,res);
