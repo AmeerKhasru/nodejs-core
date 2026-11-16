@@ -31,6 +31,6 @@ const routeHandler = (req : IncomingMessage, res :
          res.writeHead (404,{"Content-Type" :"text/plain" })
          res.end(JSON.stringify({message : "404! Not Found!"}));
     }
-     };
+};
 
 export default routeHandler;
